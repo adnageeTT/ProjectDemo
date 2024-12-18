@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced HTML</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container"> 
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a class="active" href="tables.html">HTML Tables</a></li>
+              <li><a href="forms.html">HTML Forms</a></li>
+              <li><a href="iframe.html">HTML iframe</a></li>
+            </ul>
+          </nav> 
+          <section>
+            <header>
+              <h3>HTML Tables</h2>
+            </header>
+            <p>
+              Tables are extremely important for presenting data in a structured manner to website visitors.  Correctly designing our tables is important so that screenreaders are able to correctly convey the data to visually impaired users.
+            </p>
+            <table>
+              <tr>
+                <th></th>
+                <th>Assignment 1</th>
+                <th> Assignment 2</th>
+                <th>Quiz</th>
+              </tr>
+              <tr>
+                <th>Weighting</th>
+                <td>15%</td>
+                <td>15%</td>
+                <td>20%</td>
+              </tr>
+              <tr>
+                <th>Max Mark</th>
+                <td>50</td>
+                <td>50</td>
+                <td>100</td>
+              </tr>
+              
+              </table><br><br>
+
+
+              <table>
+                <tr>
+                  <th>Student ID</th>
+                  <th>Assignment 1</th>
+                  <th> Assignment 2</th>
+                  <th>Quiz</th>
+                </tr>
+                <tr>
+                  <td>00012345</td><td>45</td><td>47.5</td><td>82</td>
+                </tr>
+                <tr>
+                  <td>00098765</td>
+                  <td>37</td>
+                  <td>42</td>
+                  <td>74</td>
+                </tr>
+                
+                </table>
+            
+            </section>
+            <section>
+              <header>
+                <h3>Modifying tables</h3>
+              </header>
+              <p>there are many ways we can edit the way out table appears on the screen.  Some thigs we will learn to do are:</p>
+              <ol>
+                <li>merge rows or columns (span)</li>
+                <li>add and style table border</li>
+                <li>add table sections with thead, tbody and tfoot tags</li>
+                <li>research table styling with zebra-stripes</li>
+              </ol>
+
+              <h4>Merging adjacent table cells</h4>
+              <p>In HTML tables it is possible to merge adjacent cells setting the <strong>rowspan</strong> and <strong>colspan</strong> attributes.  Colspan is used to indicate how many column widths in our table we want the merger cell to occupy, while rowspan indicates the number of rows we want to merge together.  It is important to note that when we span on a cell (&lt;td&gt; or &lt;th&gt;) we would need to provide fewer td or th tags for that row as shown in the examples below.  Note that I have added some inline CSS to highlight the merged cells. e.g.,</p>
+
+              <figure class="moderate">
+                <img src="images/colspan_demo.png" alt="colspan demo code" />
+                <figcaption class="highlight center">Merging 3 adjacent cells horizontally using colspan</figcaption>               
+              </figure>
+              <table class="moderate">
+                <tr>
+                  <th></th>
+                  <th colspan="3" style="background-color: pink;">ITEC240 Assessments</th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th>Assignment 1</th>
+                  <th> Assignment 2</th>
+                  <th>Quiz</th>
+                </tr>
+                <tr>
+                  <th>Weighting</th>
+                  <td>15%</td>
+                  <td>15%</td>
+                  <td>20%</td>
+                </tr>
+                <tr>
+                <th>Max Mark</th>
+                <td>50</td>
+                <td>50</td>
+                <td>100</td>
+              </tr>
+              
+              </table><div class="clear"></div><br><br>                
+             
+
+              <figure class="moderate">
+              <img src="images/rowspan_demo.png" alt="rowspan demo code" />
+              <figcaption class="highlight center">Merging 4 adjacent cells vertically using rowspan</figcaption>               
+            </figure>
+
+            <table class="moderate">
+              <tr>
+                <th rowspan="2" style="background-color: aqua;">Student ID</th>
+                <th colspan="3" style="background-color: pink;">ITEC240 Assessments</th>
+              </tr>
+              <tr>                
+                <th>Assignment 1</th>
+                <th> Assignment 2</th>
+                <th>Quiz</th>
+              </tr>
+              <tr>
+                <th>Weighting</th>
+                <td>15%</td>
+                <td>15%</td>
+                <td>20%</td>
+              </tr>
+              <tr>
+              <th>Max Mark</th>
+              <td>50</td>
+              <td>50</td>
+              <td>100</td>
+            </tr>
+            
+            </table><div class="clear"></div><br><br> 
+
+            <h4>Add and style table border</h4>
+              <p>There are a few things about a table border that can be styles.  IN particular we can set the border-style, border-width, border-color and the collapse property as well. Thankfully, while we can choose to set these properties individually, borders also allow for a shortcut format which allows us to set the style, width and colour in a single style specification.  Okay let's look at this...
+                 e.g.,</p>
+
+                 <figure class="moderate">
+                  <img src="images/rowspan_demo.png" alt="rowspan demo code" />
+                  <figcaption class="highlight center">Merging 4 adjacent cells vertically using rowspan</figcaption>               
+                </figure>
+    
+                <table class="moderate borders">
+                  <tr>
+                    <th rowspan="2" style="background-color: aqua;">Student ID</th>
+                    <th colspan="3" style="background-color: pink;">ITEC240 Assessments</th>
+                  </tr>
+                  <tr>                
+                    <th>Assignment 1</th>
+                    <th> Assignment 2</th>
+                    <th>Quiz</th>
+                  </tr>
+                  <tr>
+                    <th>Weighting</th>
+                    <td>15%</td>
+                    <td>15%</td>
+                    <td>20%</td>
+                  </tr>
+                  <tr>
+                  <th>Max Mark</th>
+                  <td>50</td>
+                  <td>50</td>
+                  <td>100</td>
+                </tr>
+                
+                </table><div class="clear"></div><br><br> 
+            </section>
+      <footer class="highlight center clear">&copy;adnagee ITEC240 202510</footer>
+    </div>
+  </body>
+</html>
