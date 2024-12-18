@@ -87,6 +87,7 @@ nav ul {
   /* Change the link color todark green on hover */
   nav ul li a:hover {
     background-color: #232e0e;
+    color: white;
   }
 
   .active {
