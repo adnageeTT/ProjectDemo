@@ -1,1 +1,96 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6em; 
+    padding: 0%;
+    margin: 0% 5%;
+    background-color: darkolivegreen;  
+}
+
+table.borders{
+    border-collapse: collapse;
+}
+
+table.borders td, table.borders th{
+    /* border-style: solid;
+    border-width: 20px;
+    border-color:darkolivegreen; */
+    border: solid 5px #dddddd;
+
+}
+#container{
+    background-color: white;
+}
+
+section{
+    padding: 0 2%;
+}
+
+h1,h2, h3, h4, h5, h6{
+    color:rgb(100, 146, 8);
+    padding-top: 30px;
+}
+figure{
+    margin:0;
+    padding:0;
+}
+
+.center{
+    text-align: center;
+}
+
+figure.wide{
+width: 60%;
+float:left;
+}
+
+figure.moderate, table.moderate{
+width: 35%;
+float:left;
+padding-left: 3%;
+}
+
+img{
+    width: 100%;
+}
+
+.clear{
+    clear:both;
+}
+
+.highlight{
+    color:#556b2f;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #62812b;
+  }
+  
+ nav ul li {
+    float: left;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color todark green on hover */
+  nav ul li a:hover {
+    background-color: #232e0e;
+  }
+
+  .active {
+    background-color: #fff;
+    color: darkolivegreen;
+  }
 
