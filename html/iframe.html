@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced HTML</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="tables.html">HTML Tables</a></li>
+              <li><a href="forms.html">HTML Forms</a></li>
+              <li><a class="active" href="iframe.html">HTML iframe</a></li>
+            </ul>
+          </nav>
+      <section>
+        <header>
+            <h2>
+                HTML IFrame Element
+            </h2>
+        </header>
+          <p>
+            The inline frame  or &lt;iframe&gt; element enables designers to embed one webpage into another.  In order to sucessfully setup an iframe element we need to set at least two attriutes, those are the <code>src</code> and  <code>title</code> attributes.  Here are our two examples today... an embedded youtube tutorial as well as an embedded recipe for chicken pastelles... yum!
+          </p>         
+            <iframe src="https://cookingwithria.com/2016/12/trinidad-pasteles/" title="Online recipe tutorial for Trini pastelles" ></iframe>
+            <br><br><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/swZFmJsU54s?si=96A1LSsk2S-iCBDq" title="YouTube video player" frameborder="0"  allowfullscreen></iframe>
+
+            <P>When you look at the above iframes you will notice that the youtube content fits better onto the page, while the recipe does not look easily readable.  If we look aat he settings I used in bpth iframes you will notice that in addititon to the minimal attributes of <code>src</code> and <code>title</code> I also set the <code>width</code>, <code>height</code>, <code>frameborder</code> and <code>allowfullscreen</code> attributes for the youtube video.  This is why it appears as it does. When using iframes ensure that you take the time to adjust its presentation so that users find the content easily accessible.</P>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/swZFmJsU54s?si=9YIRxjn2qqN6XepM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+
+        <!-- <figure class="moderate">
+            <img src="images/in_page_link_setup.png" alt="animated confetti image">
+            <figcaption class="highlight center">Setting the hyperlink href with #</figcaption>
+        </figure> -->
+      <section>
+        
+      </section>
+      <footer class="highlight center">&copy;adnagee ITEC240 202510</footer>
+    </div>
+  </body>
+</html>
